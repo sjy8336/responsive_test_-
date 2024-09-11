@@ -9,7 +9,7 @@ main .visual {
 }
 main h2 {text-align:center; padding:30px 0; text-transform: capitalize;}
 main .link {max-width:1400px; margin:0 900px; display:flex;}
-main .link a img {} 
+main .link a img {width: 100%; height: auto;} 
 @media screen and (max-width:1400px){/* CSS수정 - max-width:1400px; -> max-width:1400px (;지우기) */
     header .left, 
     header .right {display:none;}
