@@ -1,17 +1,20 @@
 * {box-sizing:border-box; margin:0; padding:0; font-size:1.0em; color:#000; text-decoration:none;}
 header {display:flex; justify-content: space-between; padding:0 15px; align-items: center; height:60px; position:relative;}
-header a {text-transform: uppercase; font-weight:600; margin:0 5px;}
-header a img {}
+header a {text-transform: uppercase; font-weight:600; margin: 0 9px;}
+header a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
 header h1 {width:150px; position:absolute; left:50%; transform:translateX(-50%);}
 main .visual {
     background:url(../images/visual.gif) no-repeat center 6%;/* CSS수정 - no-repeat 작성 */
     height:350px; width:100%;
 }
 main h2 {text-align:center; padding:30px 0; text-transform: capitalize;}
-main .link {max-width:1400px; margin:0 900px; display:flex;}
-main .link a img {width: 100%; height: auto;} 
+main .link {max-width:1400px; margin:0 auto; display:flex;}/* CSS수정 - margin: 0 900px; -> margin: 0 auto; */
+main .link a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
 @media screen and (max-width:1400px){/* CSS수정 - max-width:1400px; -> max-width:1400px (;지우기) */
     header .left, 
     header .right {display:none;}
     main .link {padding:0 15px;}
+    header a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
+    main .link a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
+    main .visual {background-size: cover;}/* 이미지 크기 수정 */
 }/* CSS수정 - }닫기 */
