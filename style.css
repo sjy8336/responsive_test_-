@@ -4,7 +4,7 @@ header a {text-transform: uppercase; font-weight:600; margin: 0 9px;}
 header a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
 header h1 {width:150px; position:absolute; left:50%; transform:translateX(-50%);}
 main .visual {
-    background:url(../images/visual.gif) no-repeat center 6%;/* CSS수정 - no-repeat 작성 */
+    background:url(../images/visual.gif) no-repeat center 6% / cover;/* CSS수정 - no-repeat 작성 *//* 이미지 크기 수정 */
     height:350px; width:100%;
 }
 main h2 {text-align:center; padding:30px 0; text-transform: capitalize;}
@@ -14,7 +14,6 @@ main .link a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
     header .left, 
     header .right {display:none;}
     main .link {padding:0 15px;}
-    header a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
-    main .link a img {width: 100%; height: auto;}/* 이미지 크기 수정 */
-    main .visual {background-size: cover;}/* 이미지 크기 수정 */
+    header a img {width: 100%; height: auto;}
+    main .link a img {width: 100%; height: auto;}
 }/* CSS수정 - }닫기 */
